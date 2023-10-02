@@ -213,8 +213,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4966719baa26e4b0e8231a24d9bd491a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FocusMode: 1
-  m_LightEstimationMode: 0
+  m_FocusMode: -1
+  m_LightEstimationMode: -1
   m_AutoFocus: 1
   m_LightEstimation: 0
   m_FacingDirection: 1
@@ -359,6 +359,7 @@ GameObject:
   - component: {fileID: 744097850}
   - component: {fileID: 744097849}
   - component: {fileID: 744097848}
+  - component: {fileID: 744097852}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -422,6 +423,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &744097852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744097847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8654b2a8547d96f4eaebfc73f4e15518, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flowers:
+  - {fileID: 5326394646425155438, guid: 6171449839304f24d804cb6eeb01b0ea, type: 3}
+  - {fileID: 1411746076562654254, guid: b7beed5ebb490ae49993d8425650619b, type: 3}
+  - {fileID: 7433122136548516780, guid: 529cdb449a5ea464fb8d1a2c447bec07, type: 3}
+  - {fileID: 3602177968231115889, guid: 234b1036c196ba646a188243f5aab7bb, type: 3}
+  - {fileID: 6439435842357232082, guid: ac2ebff0fd2aa1149a5193156907383e, type: 3}
+  - {fileID: 7170496284068705423, guid: 06e811f8e6f05b8409beead9592e71c3, type: 3}
+  - {fileID: 3702324152010672963, guid: e0989ebe49ef0d04780b994241a8ea65, type: 3}
+  - {fileID: 5187383456559314317, guid: f1af79ddf0e920b4495ac2d29772baf0, type: 3}
+  - {fileID: 3087346947343515562, guid: 305a026437a4f4f4bbc53f8b6c11cc1b, type: 3}
+  - {fileID: 4119639184909748313, guid: fcc31b220753f0942802880bdd2ae1e3, type: 3}
+  - {fileID: 1046890181331180562, guid: 0da44ba58632ab84197c68ed4bd448da, type: 3}
+  - {fileID: 3298502738358374754, guid: 2cb9f2524e4b7b347b291c57ba165836, type: 3}
+  sessionOrigin: {fileID: 744097850}
+  raycastManager: {fileID: 744097849}
+  planeManager: {fileID: 744097848}
 --- !u!1 &1872335371
 GameObject:
   m_ObjectHideFlags: 0
