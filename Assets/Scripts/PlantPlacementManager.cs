@@ -24,6 +24,13 @@ public class PlantPlacementManager : MonoBehaviour
             //Place Objects Randomly
             GameObject _object = Instantiate(flowers[Random.Range(0, flowers.Length - 1)]);
             _object.transform.position = raycastHits[0].pose.position;
+
+            //Disable the planes and Plane Manager
+            foreach(var plane in planeManager.trackables)
+            {
+                plane.gameObject.SetActive(false);
+            }
+            planeManager.enabled = false;
         }
     }
 }
